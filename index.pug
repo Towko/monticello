@@ -1,0 +1,252 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Monticello
+    link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="./css/styles.css")
+
+body.monticello
+    main.mainpage
+        .container.mainpage__container
+            header.mainpage__header.header
+                .header__logo.logo
+                    img.logo__logo(src="./img/logo.png")
+                nav.header__nav.menu
+                    ul.menu__container
+                        li.menu__item
+                            a.menu__link(href="#whatwedo") About us
+                        li.menu__item
+                            a.menu__link(href="#gallery") Projects
+                        li.menu__item
+                            a.menu__link(href="#news") News
+                        li.menu__item
+                            a.menu__link(href="#contacts") Contact
+                ul.header__social.social
+                    li.social__item
+                        a.social__link(href="https://facebook.com", target="_blank", alt='Facebook')
+                            svg.social__icon
+                                use(xlink:href="./img/sprite.svg#fb")
+                        
+                    li.social__item
+                        a.social__link(href="https://twitter.com", target="_blank", alt='Twitter')
+                            svg.social__icon
+                                use(xlink:href="./img/sprite.svg#tw")
+                    li.social__item
+                        a.social__link(href="https://instagram.com", target="_blank", alt='Instagram')
+                            svg.social__icon
+                                use(xlink:href="./img/sprite.svg#in")
+            
+            .mainpage__slider.slider
+                .slider__slide.slide
+                    h1.slide__title.title Simple & mordern
+                    h4.slide__subtitle We make the world's beautiful every day
+                .slider__slide.slide
+                    h1.slide__title.title Simple & mordern
+                    h4.slide__subtitle We make the world's beautiful every day
+                .slider__slide.slide
+                    h1.slide__title.title Simple & mordern
+                    h4.slide__subtitle We make the world's beautiful every day
+
+            .mainpage__jumper.jumper
+                a.jumper__button(href="#gallery")
+                    svg.jumper__icon
+                        use(xlink:href="./img/sprite.svg#down")
+
+    section#whatwedo.section.about-section
+        .container.section__container
+            h2.section__title.title What we do
+            
+            .section__about.about.about--left
+                .about__img-desc.img-desc
+                    .img-desc__pic.img-desc__pic--pic1
+                        img.img-desc__item(src="./img/joel-filipe-151697.jpg")
+
+                .about__text.text-desc
+                    h4.text-desc__subtitle.subtitle One world
+                    h3.text-desc__title.title Trade center
+                    p.text-desc__text Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                    a.text-desc__button.button More details
+                    .text-desc__point
+                        svg.text-desc__icon
+                            use(xlink:href="./img/sprite.svg#marker") 
+                        | New York City, United States - 1776 feet
+
+            .section__about.about.about--right
+                .about__img-desc.img-desc
+                    .img-desc__pic.img-desc__pic--pic2
+                        img.img-desc__item(src="./img/photos-1284iH4Hjf4mhNgW.jpg")
+
+                .about__text.text-desc
+                    h4.text-desc__subtitle.subtitle International
+                    h3.text-desc__title.title Commerce centre
+                    p.text-desc__text Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                    a.text-desc__button.button More details
+                    .text-desc__point
+                        svg.text-desc__icon
+                            use(xlink:href="./img/sprite.svg#marker") 
+                        | Hong Kong - 1588 Feet
+
+    section#news.section.news-section
+        .container.section__container
+            h2.section__title.title Latest news
+
+            .news-section__news.news
+                .news__slider
+                    a.news__card.card(href="")
+                        img.card__img(src="./img/lauren-mancke-60633.jpg")
+                        .card__title.card-desc
+                            h4.card-desc__title
+                                | See The Unmatched Beauty Of The Great. 
+                            p.card-desc__desc Free directories: directories are perfect for customers that are... searching
+                        .card__author.author
+                            .author__photo
+                                img.author__img(src="./img/photos-13323rs3Du9xyQ3KR.jpg")
+                            .author__info
+                                .author__name Isaac Dunn
+                                .author__pubdate
+                                    time(datetime="2017-02-09") 09 Feb 2017
+
+                    a.news__card.card(href="")
+                        img.card__img(src="./img/matthew-hamilton-202227.jpg")
+                        .card__title.card-desc
+                            h4.card-desc__title
+                               | Effective Advertising Pointers.
+                            p.card-desc__desc Having a home based business is a wonderful asset to your life...
+                        .card__author.author
+                            .author__photo
+                                img.author__img(src="./img/photos-13323vsWmKApDZJIh.jpg")
+                            .author__info
+                                .author__name Dominic Freeman
+                                .author__pubdate
+                                    time(datetime="2017-04-24") 24 Apr 2017
+
+                    a.news__card.card(href="")
+                        img.card__img(src="./img/joel-filipe-151690.jpg")
+                        .card__title.card-desc
+                            h4.card-desc__title
+                                | Hypnotize Yourself Into The Ghost.
+                            p.card-desc__desc There are many things that are important to catalog design....
+                        .card__author.author
+                            .author__photo
+                                img.author__img(src="./img/photos-13323TAfapiSrc9IO.jpg")
+                            .author__info
+                                .author__name Alice Ward
+                                .author__pubdate
+                                    time(datetime="2017-12-30") 30 Dec 2017
+
+                    a.news__card.card(href="")
+                        img.card__img(src="./img/lauren-mancke-60633.jpg")
+                        .card__title.card-desc
+                            h4.card-desc__title
+                                | See The Unmatched Beauty Of The Great. 
+                            p.card-desc__desc Free directories: directories are perfect for customers that are... searching for
+                        .card__author.author
+                            .author__photo
+                                img.author__img(src="./img/photos-13323rs3Du9xyQ3KR.jpg")
+                            .author__info
+                                .author__name Isaac Dunn
+                                .author__pubdate
+                                    time(datetime="2017-02-09") 09 Feb 2017
+
+                    a.news__card.card(href="")
+                        img.card__img(src="./img/matthew-hamilton-202227.jpg")
+                        .card__title.card-desc
+                            h4.card-desc__title
+                                | Effective Advertising Pointers.
+                            p.card-desc__desc Having a home based business is a wonderful asset to your life...
+                        .card__author.author
+                            .author__photo
+                                img.author__img(src="./img/photos-13323vsWmKApDZJIh.jpg")
+                            .author__info
+                                .author__name Dominic Freeman
+                                .author__pubdate
+                                    time(datetime="2017-04-24") 24 Apr 2017
+
+    section#gallery.section.gallery-section
+        .container.section__container
+            h2.section__title.title Gallery
+
+            .gallery
+                picture.gallery__item.gallery__item--big
+                    a.gallery__picture(href="./img/gal1.jpg")
+                        img.gallery__img(src="./img/gal1.jpg")
+                picture.gallery__item
+                    a.gallery__picture(href="./img/gal2.jpg")
+                        img.gallery__img(src="./img/gal2.jpg")
+                picture.gallery__item
+                    a.gallery__picture(href="./img/gal3.jpg")
+                        img.gallery__img(src="./img/gal3.jpg")
+                picture.gallery__item
+                    a.gallery__picture(href="./img/gal4.jpg")
+                        img.gallery__img(src="./img/gal4.jpg")
+                picture.gallery__item
+                    a.gallery__picture(href="./img/gal5.jpg")
+                        img.gallery__img(src="./img/gal5.jpg")
+
+            button.button.gallery__button See more
+
+    footer.footer
+        .footer__maps
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26911.879782636202!2d-73.91932696048683!3d40.674821971494744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2z0JHRgNGD0LrQu9C40L0sINCd0YzRji3QmdC-0YDQuiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1604676054889!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        #contacts.footer__contacts
+            form.footer__form.form
+                h2.section__title.form__title.title Get in touch
+                .form__container
+                    .form__contacts.contact
+                        .contact__item
+                            svg.contact__icon
+                                use(xlink:href="./img/sprite.svg#marker")
+                            span.contact__contact 91 Nolan Extensions Suite 670
+                        .contact__item                        
+                            svg.contact__icon
+                                use(xlink:href="./img/sprite.svg#phone")
+                            span.contact__contact +001 356-868-2454
+                        .contact__item    
+                            svg.contact__icon
+                                use(xlink:href="./img/sprite.svg#inbox")
+                            span.contact__contact gahuy93@gmail.com
+                        .contact__item
+                            svg.contact__icon
+                                use(xlink:href="./img/sprite.svg#clock")
+                            span.contact__contact From 07:05AM to 19:30PM
+
+                    .form__inputs.input
+                        input.input__field(type="text", name="name", placeholder="Name", required="required", minlength=3)
+                        input.input__field(type="email", name="email", placeholder="Email", required="required")
+                        button.button.input__button(type="submit") Submit
+
+            .footer__container
+                .footer__block
+                    .logo
+                        img.logo__logo(src="./img/logo.png")
+                        
+                    .footer__about.copyright
+                        copyright.copyright__item Copyrights &copy 2020
+                            
+                        .copyright__creators Made with by Antonyo for 
+                            svg.copyright__icon
+                                use(xlink:href="./img/sprite.svg#beetroot")
+                            | Beetroot Academy
+                   
+                .footer__block                   
+                    ul.footer__social.social
+                        li.social__item
+                            a.social__link(href="https://facebook.com", target="_blank", alt='Facebook')
+                                svg.social__icon
+                                    use(xlink:href="./img/sprite.svg#fb")
+                        li.social__item
+                            a.social__link(href="https://twitter.com", target="_blank", alt='Twitter')
+                                svg.social__icon
+                                    use(xlink:href="./img/sprite.svg#tw")
+                        li.social__item
+                            a.social__link(href="https://instagram.com", target="_blank", alt='Instagram')
+                                svg.social__icon
+                                    use(xlink:href="./img/sprite.svg#in")
+
+
+    script(src="./js/jquery-3.5.1.min.js")
+    script(src="./js/slick.min.js")
+    script(src="./js/scripts.js")
